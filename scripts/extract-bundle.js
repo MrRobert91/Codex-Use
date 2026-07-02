@@ -118,6 +118,59 @@ a.ws-link:focus-visible {
   background: var(--f5-orange) !important;
   color: #fff !important;
 }
+
+@media (max-width: 720px) {
+  .ws-progress {
+    padding: 12px 16px !important;
+    gap: 14px !important;
+  }
+
+  .ws-progress > div:first-child span:last-child {
+    max-width: 138px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  .ws-col {
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+  }
+
+  h1 {
+    font-size: 48px !important;
+    line-height: .98 !important;
+  }
+
+  h2 {
+    font-size: 28px !important;
+  }
+
+  article[data-ch] {
+    padding: 26px 24px !important;
+    border-radius: 18px !important;
+  }
+
+  article[data-ch] > div {
+    align-items: stretch !important;
+    flex-direction: column !important;
+    gap: 14px !important;
+  }
+
+  article[data-ch] > div > div:last-child {
+    padding-right: 0 !important;
+  }
+
+  article[data-ch] h3 {
+    font-size: 24px !important;
+    line-height: 1.12 !important;
+    max-width: calc(100% - 56px);
+  }
+
+  article[data-ch] ol {
+    padding-left: 19px !important;
+  }
+}
 `,
 );
 
