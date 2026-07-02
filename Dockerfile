@@ -1,7 +1,7 @@
 FROM node:24-alpine AS build
 
 WORKDIR /app
-COPY ["Chuleta de Codex.html", "./Chuleta de Codex.html"]
+COPY ["Uso de Codex.html", "./Uso de Codex.html"]
 COPY scripts/extract-bundle.js ./scripts/extract-bundle.js
 RUN node scripts/extract-bundle.js
 

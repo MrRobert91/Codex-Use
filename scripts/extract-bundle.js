@@ -2,7 +2,7 @@ const fs = require("fs");
 const path = require("path");
 const zlib = require("zlib");
 
-const sourcePath = path.join(process.cwd(), "Chuleta de Codex.html");
+const sourcePath = path.join(process.cwd(), "Uso de Codex.html");
 const outDir = path.join(process.cwd(), "public");
 const assetsDir = path.join(outDir, "assets");
 const designSystemDir = path.join(
@@ -39,7 +39,7 @@ for (const [uuid, entry] of Object.entries(manifest)) {
 }
 
 template = template
-  .replace("<head>", "<head>\n<title>Chuleta de Codex</title>")
+  .replace("<head>", "<head>\n<title>Uso de Codex</title>")
   .replace(
     /<script>\s*addEventListener\('load', \(\) => \{[\s\S]*?window\.print\(\), 500\);\s*\}\)\(\);\s*\}\);\s*<\/script>/,
     "",
